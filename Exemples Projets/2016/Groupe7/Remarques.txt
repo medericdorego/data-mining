@@ -1,0 +1,28 @@
+Groupe 7
+Marwen TOUZI
+Salma BENNISS
+Hibatallah HADJ KACEM
+Walid GAFSI
+Fourat MASTOURI
+
+Thème : Moteur de recommandation
+
+Plan :
+    Description des données
+    "Etat de l'art"
+    CF
+    CB
+    CB-CF
+
+Remarques
+    (Les observations positives sont pucées par un +, les points négatifs par un -)
+   
+    Remarques générales :
+        + Mes recommandations en cours de projets ont été écoutées !
+        + Penser à faire un état de l'art sur le filtrage collaboratif est judicieux
+
+        "Cela ne nous a pas paru suffisant en termes de degré de similarité, alors nous avons pensé à utiliser le package python IMDbPY" Eh Oh ! comment ça "nous" ?
+
+        Bon, j'ai fait aux autres groupes un pavé avec à chaque paragraphe de leur projet ce qui est bien et moins bien, dans votre cas ce serait compliqué. Votre rapport est excellent puisque vous détaillez par le menu l'intégralité de votre démarche (ceci dit vu votre sujet, faire autre chose eut été certainement très médiocre vu que vous appliquez une "recette" décrite dans de nombreux articles, sur des données régulièrement citées en exemple dans ces mêmes articles) S'il y a une chose que je regrette, c'est qu'à chaque étape les exemples données soient donnés juste par leur "identifiant" Il aurait été bien plus intéressant pour le lecteur (surtout que j'ai lu pas mal d'articles sur le sujet et que donc je retrouve beaucoup de choses attendues dans votre rapport qui ne me surprennent pas des masss) d'avoir des exemples "métier" le gars à vu tel, tel, tel film, il se voit recommander tel, tel tel film.
+        Plutôt que "nous cherchons à recommander à l’utilisateur 10 un exemple d’items qui peuvent lui intéresser tout en associant pour chacun les ratings prédits. Nous pouvons voir que l’item “59684” est le plus adéquat." Dites moi "l'utilisateur 10 a aimé "Hiroshima mon amour" et "Indiana Jones" on lui recommandera "Le baron de l'écluse" ce film parait effectivement ceci, cela... le moment ou vous vous en approchez le plus c'est p23 avec Toy Story et Bernard et Bianca, j'aurais apprécié votre avis sur ce qui effectivement rend ces deux films (que 20 ou 30 ans et un gouffre technologie d'animation séparent !) similaires. (A titre personnel je trouve que c'est étonnamment pertinent comme rapprochement)
+        En fait c'est çà le souci de votre travail, il est très qualitatif, très soigné, mais impersonnel... "artificiel"... c'est ça que je vous demande pour la soutenance, illustrez, montrez que vous n'avez pas fait qu'aligner des scripts mais que vous avez vraiment plongé dans les données, les films, les spectateurs... Utilisez des méthodes annexes pour fouiller les effets de la recommandation (du text-mining sur les données imdb pour voir si les vocabulaires utilisés par les critiques ou dans les synopsis correspondent pour des films que vos algos rapprochent ? une classification des spectateurs avec "parangons" et les meilleurs films pour chaque classe ? Trouver grâce aux matrices de travail de la méthode des films qui soient des archétypes de leur genre ? évaluer si les films les plus "recommandables" sont ceux qui sont aussi les mieux noté sur IMDB...)  

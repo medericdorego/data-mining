@@ -1,0 +1,36 @@
+Groupe 4
+    Guillaume LEBAULT
+    Thomas NGUYEN
+    Yasmine MARICAR
+    Emmanuel BAVOUX
+
+Plan :
+    Analyse Descriptive
+    Analyse Exploratoire
+    Regles d'associations
+    Modélisation
+
+Remarques :
+    (Les observations positives sont pucées par un +, les points négatifs par un -)
+
+    Introduction et analyse descriptive
+        + Complet et bien exécuté, pas de remarques particulières à faire
+
+    ACM
+        - Les raisons du choix de n'utiliser qu'un ensemble réduit de variable ne sont pas bien explicités
+        +- L'examen des valeurs propres est pertinemment détaillé, en fait mentionner au final le critère de Kaizer ici est même dommage, car ce n'est en aucune façon une règle fiable, surtout pour une ACM
+        - finalement combien d'axe sont gardés ? vous êtes restés sur ncp=5 ou avez augmenté ?
+        + Bonne idée de présenter une représentation uniquement des modalités ayant la meilleure contribution, pour avoir un graph visible, et d'expliquer ce choix.
+        - C'est dommage de n'avoir de visu que sur les axes 1 et 2
+        - Il manque  une discussion de l'interprétation des axes
+
+    Classification
+        + bonne caractérisation/interprétation des clusters
+        - pourquoi avoir chois de couper la CAH à deux clusters ? D'autant que bon... isoler les accidents avec les piétons c'est bien, mais les accidents avec obstacles mobiles c'est certainement pas une classe très homogène. D'ailleurs on n'a pas les effectifs de ces deux groupes !
+        Avez vous essayé de comparer les deux ACM ?
+
+    Modélisation
+            Corrélations
+                -- Ce qui aurait été intéressant c'est le détail des tests de corrélation entre votre variable cible et chaque variables longueurs pour justifier toute votre démarche !
+        + Ne pas avoir oublié de discuter le traitement des manquantes
+        - Les trois modèles ne sont pas comparés au titre de la significativité de chaque variable

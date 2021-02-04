@@ -1,0 +1,72 @@
+Groupe 2 :
+LYDIA TARMOUL GALINA KOSYAKOVA WANIS LARBANI ARNAUD CALCHIDOURY ARSLANE BOUCHEBBAH
+
+Thème : étude sur l'élection présidentielle américaine de 2016
+
+Plan :
+    Analyse Exploratoire
+    Classification
+    Régression
+   
+
+Remarques :
+    (Les observations positives sont pucées par un +, les points négatifs par un -)
+
+    ++ Excellente introduction
+
+    Etude exploratoire
+         Présentation des données
+             + Bon résumé
+         Stats univariées et choix des variables
+             - Certaines variables trop corrélées "structurellement" à la variable cible ne sont pas pour autant "inintéressantes" et pourraient cependant de temps en temps être utilisées comme illustratives (en particulier les basculements des comtés Obama2012 vers Trump)
+
+             J'aurais aimé que vous détailliez plus de variables sur le modèle de black/white
+
+             - Trop grande "naïveté" dans le discours
+                 ex : "Pour chacune des variables, il y a une grande différence entre sa valeur minimale et maximale..."
+                 Ben oui ça s'appelle une étendue...  En quoi ça induit une hétérogénéité entre les variables ? Vous devez les comparer entre elles, si elles ont une étendue, une variance, d'un ordre de grandeur comparable.
+                 ex 2 "les valeurs minimums et maximums de la proc means de cette variable". Pourquoi "de la proc means" Je suis à peu près convaincu que ce sont les valeurs minimales et maximales prises par la variables, tout simplement.
+
+             - Au final après une observation judicieuse sur le fait que la population noire est plus inégalement répartie que la population blanche, qu'il y'ait a peu près toujours des blancs partout alors qu'on peut avoir des comtés avec beaucoup ou très peu de noirs, on n'a même pas une comparaison des statistiques univariés des deux variables, les deux boites à moustache côte à côte
+
+             - A quoi vous ont servies les stats univariées au final ? J'aurais aimé une observation générale sur leur utilité ! est-ce que certaines variables ont été mises en avant ? est-ce que d'autres se sont révélées inutilisables ?...
+
+         Stats bivariées et corrélations
+             - "Le résultat peut être affiché en heatmap en fonction des p values ainsi que les coefficients de corrélation. Malheureusement la qualité du graphique se dégrade avec la croissance du nombre de variables (50 dans notre cas). "
+                 J'aurais bien voulu le voir quand même ce graphique ! Vous n'êtes pas obligé de mettre les 50 variables dedans, seulement celles qui ont l'air plus ou moins corréllées, par groupe de 5/10 après avoir observé le premier.
+
+             - "Cela permet une identification rapide des variables très corrélées (>0.9 ou <-0.9) avec d’autres variables, à savoir. En voici la liste : "
+                 Je m'attendais à une liste de paires de variables... j'ai une liste de variables dont je ne sais pas à quoi elles sont corréllées
+
+             ++ Très bons paragraphes sur le VIF et la multicolinéarité
+
+             - "Par exemple, la variable VET605213 ("Veterans, 2009-2013") est liée (entre autres) à  HSG010214 ("Housing units, 2014")  SBO001207 ("Total number of firms, 2007").
+             Vous ne dites pas si ce sont des corrélations négatives ou positives !
+
+     ACP
+         + Bon point de privilégier une méthode (Kaiser) vous donnant plus d'axe
+         - Pour être honnête, si Kaiser vous donne bien 9 axes, contrairement à ce que vous dites les méthodes ne convergent pas, si vous vous étiez arrêté à la première rupture de pente (coude) vous n'auriez gardés que 6 axes
+
+         ++ Interprétation rigoureuse des axes (manque seulement les "parangons" i.e. 5 à 10 comtés caractéristiques de chaque axe, ceux au plus gros cos² par exemple)
+
+         - Je trouve dommage par contre de ne pas avoir une représentation géographique des comtés contribuant le plus à la construction de chaque axe, ça aurait pu valider certaines identifications (par exemple que votre dernier axe, celui avec les indiens, très étendus, et avec une faible population afro-américaine pourraient être ceux des états du centre nord)
+
+         - Projeter sur vos axes factoriels des variables quali illustratives telles que les noms des états par exemple auraient pu également être très judicieux, on manque globalement de bonnes représentations graphiques qui sont indispensables à une évocation concise des définitions des axes.
+
+    Classif
+
+        - 3 classes... j'aurais au moins commencé avec 7 vu l'allure de votre dendogramme c'est vraiment TRES peu vu votre thématique et je n'ai pas l'histogramme des deltas d'inertie pour valider votre choix.
+
+        ++ Caractérisation des classes très rigoureuse également
+
+    Régression
+
+        ++ Excellente discussion comparée des sélections de variables des deux modèles
+        - J'aurais peut être creusé les paramètres pour avoir un poil plus de variables quand même, et forcé certaines des variables les plus significatives de l'ACP et de la CAH
+
+
+        - Quelques phrases (ex : "Ensuite, si on parle des modèles, celui de Clinton comporte plus des variables (15 variables) que pour Trump (12 variables), c’est-à-dire il y a des facteurs qui sont susceptible au choix pour le candidat démocrate. ") Peu compréhensibles
+
+
+    Conclusion
+        Bonne dans l'ensemble, mais je regrette que vous ne vous soyiez pas prêté au jeu d'une analyse fine de vos résultats en mode qui vote quoi et pour quelle raison (d'autant que vous avez des effets superbes, comme le fait que Clinton ait clairement perdu le vote des pauvres et de certaines minorités ethniques !)
